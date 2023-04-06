@@ -83,6 +83,7 @@ public class Employee {
     private void moveIntoCubicle(String cubeId) {
         setCubeId(cubeId);
         moveIntoCubicle(getCubeId());
+        hasMovedIn();
         System.out.println(firstName + " " + lastName + " moved into cubicle "
                 + cubeId + " on " + formatCurrentDate());
     }

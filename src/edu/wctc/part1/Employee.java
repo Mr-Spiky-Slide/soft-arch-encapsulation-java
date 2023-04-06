@@ -113,7 +113,9 @@ public class Employee {
     }
 
     public void setOrientationDate(LocalDate orientationDate) {
-        if (true)
+        if (orientationDate == null) {
+            throw new IllegalArgumentException("Must not be null");
+        }
         this.orientationDate = orientationDate;
     }
 }
