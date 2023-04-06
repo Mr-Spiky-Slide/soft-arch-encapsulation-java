@@ -15,6 +15,10 @@ public class Main {
 
         employee.doFirstTimeOrientation("A101");
         employee.printReport();
+
+        Boss boss = new Boss();
+        boss.hirePerson("Bruce", "Wayne", "115239837");
+
     }
 
 }

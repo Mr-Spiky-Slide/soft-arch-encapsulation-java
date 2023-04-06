@@ -25,6 +25,10 @@ public class Engine {
     private int cylinderCount;
     private boolean running;
 
+    private static final int MIN_CYLINDERS = 1;
+
+    private static final int MAX_CYLINDERS = 12;
+
     public Engine(int cylinders) {
         setCylinderCount(cylinders);
     }
@@ -38,7 +42,7 @@ public class Engine {
     // By making this private you cannot change the cylinder count once
     // the engine is created. This is a requirements issue.
     private void setCylinderCount(int value) {
-        if (value < 1 || value > 12) { // magic numbers!
+        if (value < MIN_CYLINDERS || value > MAX_CYLINDERS) { // magic numbers!
            throw new IllegalArgumentException("Invalid cylinder count");
         }
         cylinderCount = value;

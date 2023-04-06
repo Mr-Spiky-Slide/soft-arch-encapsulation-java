@@ -7,7 +7,7 @@ package edu.wctc.part4;
  * of using the current console output. And notice that making this change would
  * not cause problems with any other classes. Very flexible!
  */
-public class EmployeeReportService {
+public class EmployeeReportService{
 
     private String report = "";
 
